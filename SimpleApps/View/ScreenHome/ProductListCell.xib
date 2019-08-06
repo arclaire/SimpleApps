@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="i9R-vM-DeB" customClass="ProductListCell" customModule="SimpleApps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hyk-zW-fKB">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Hyk-zW-fKB" secondAttribute="height" multiplier="1:1" id="hJU-Cp-i9R"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GV-B4-XHs">
+                        <rect key="frame" x="0.0" y="188" width="188" height="112"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOJ-rp-8S7" userLabel="lblTitle">
+                                <rect key="frame" x="10" y="14" width="168" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="PRICE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxc-OG-f4I" userLabel="lblPrice">
+                                <rect key="frame" x="8" y="77" width="168" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" red="0.92915791273117065" green="0.40018647909164429" blue="0.46623790264129639" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8596927209959172" green="0.89217692613601685" blue="0.85971647674086671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eOJ-rp-8S7" secondAttribute="trailing" constant="10" id="CTa-fn-CYb"/>
+                            <constraint firstItem="cxc-OG-f4I" firstAttribute="leading" secondItem="2GV-B4-XHs" secondAttribute="leading" constant="8" id="Pzr-Q3-YAD"/>
+                            <constraint firstItem="eOJ-rp-8S7" firstAttribute="leading" secondItem="2GV-B4-XHs" secondAttribute="leading" constant="10" id="RyQ-CM-VqW"/>
+                            <constraint firstAttribute="bottom" secondItem="cxc-OG-f4I" secondAttribute="bottom" constant="15" id="VHe-Jc-nyQ"/>
+                            <constraint firstAttribute="trailing" secondItem="cxc-OG-f4I" secondAttribute="trailing" constant="12" id="ghu-y4-WNc"/>
+                            <constraint firstItem="eOJ-rp-8S7" firstAttribute="centerX" secondItem="2GV-B4-XHs" secondAttribute="centerX" id="r8O-gO-1Hj"/>
+                            <constraint firstItem="eOJ-rp-8S7" firstAttribute="top" secondItem="2GV-B4-XHs" secondAttribute="top" constant="14" id="weQ-eb-bXC"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-pE-z5r" userLabel="imgBadge">
+                        <rect key="frame" x="164" y="164" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0eE-pE-z5r" secondAttribute="height" multiplier="1:1" id="oaM-i7-AaI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0eE-pE-z5r" firstAttribute="width" secondItem="Hyk-zW-fKB" secondAttribute="height" multiplier="12:94" id="CCL-wS-0QK"/>
+                <constraint firstItem="0eE-pE-z5r" firstAttribute="trailing" secondItem="Hyk-zW-fKB" secondAttribute="trailing" id="CqC-8f-97g"/>
+                <constraint firstAttribute="trailing" secondItem="Hyk-zW-fKB" secondAttribute="trailing" id="NYq-ky-Qg6"/>
+                <constraint firstAttribute="bottom" secondItem="2GV-B4-XHs" secondAttribute="bottom" id="SbI-c2-HsX"/>
+                <constraint firstItem="2GV-B4-XHs" firstAttribute="top" secondItem="Hyk-zW-fKB" secondAttribute="bottom" id="TJr-YW-KgL"/>
+                <constraint firstItem="Hyk-zW-fKB" firstAttribute="leading" secondItem="i9R-vM-DeB" secondAttribute="leading" id="YXa-Ta-FKC"/>
+                <constraint firstAttribute="trailing" secondItem="2GV-B4-XHs" secondAttribute="trailing" id="ej7-CZ-ve7"/>
+                <constraint firstItem="Hyk-zW-fKB" firstAttribute="top" secondItem="i9R-vM-DeB" secondAttribute="top" id="fnp-bn-aXt"/>
+                <constraint firstItem="2GV-B4-XHs" firstAttribute="leading" secondItem="i9R-vM-DeB" secondAttribute="leading" id="pdf-Rm-Or3"/>
+                <constraint firstItem="0eE-pE-z5r" firstAttribute="bottom" secondItem="Hyk-zW-fKB" secondAttribute="bottom" id="rwn-Oi-ykw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Mpx-Rd-tuZ"/>
+            <size key="customSize" width="261" height="464"/>
+            <connections>
+                <outlet property="imgBadge" destination="0eE-pE-z5r" id="RVQ-sf-Xt1"/>
+                <outlet property="imgProduct" destination="Hyk-zW-fKB" id="o1t-8i-tz5"/>
+                <outlet property="lblPrice" destination="cxc-OG-f4I" id="Oza-GW-Gb7"/>
+                <outlet property="lblTitle" destination="eOJ-rp-8S7" id="RYj-af-QUU"/>
+            </connections>
+            <point key="canvasLocation" x="4.3478260869565224" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+</document>
